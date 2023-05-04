@@ -5,7 +5,7 @@ import AuthStack from './authNavigators';
 export default function RootNavigator() {
     return(
         <NavigationContainer>
-            <AuthStack />
+            <AuthStack /> 
         </NavigationContainer>
     )
 }

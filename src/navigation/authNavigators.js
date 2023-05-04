@@ -10,22 +10,21 @@ export default function AuthStack() {
     return(
         <Auth.Navigator>
 
-
             <Auth.Screen
                 name = "SignInWelcomeScreen"
                 component = {SignInWelcomeScreen}
-                options = {{
-                    ...TransitionPresets.RevealFromBottomAndroid
-                }}
+                // options = {{
+                //     ...TransitionPresets.RevealFromBottomAndroid
+                // }}
             />
 
             <Auth.Screen
                 name = "SignInScreen"
                 component = {SignInScreen}
-                options = {{
-                    headerShown: false,
-                    ...TransitionPresets.RevealFromBottomAndroid
-                }}
+                // options = {{
+                //     headerShown: false,
+                //     ...TransitionPresets.RevealFromBottomAndroid
+                // }}
             />
 
         </Auth.Navigator>
