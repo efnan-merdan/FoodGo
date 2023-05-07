@@ -8,18 +8,20 @@ import RootNavigator from "./src/navigation/rootNavigator";
 
 export default function App() { 
   return (
-      <View>
+      <View style={styles.container}>
         <StatusBar 
           barStyle = "light-content"
           backgroundColor = {colors.statusBar}
         />
-
-{/* <SignInWelcomeScreen/> */}
+{/* 
+<SignInWelcomeScreen/> */}
         <RootNavigator/>
       </View>
     )
 }
 
 const styles = StyleSheet.create({
-  container: {}
+  container: {
+    flex:1
+  }
 })

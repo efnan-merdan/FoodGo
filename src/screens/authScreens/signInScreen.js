@@ -13,7 +13,7 @@ export default function SignInScreen ({navigation}) {
 
     return (
         <View style = {styles.container}>
-            <Header title ="MY ACCOUNT"  type ="arrow-left" />
+            <Header title ="MY ACCOUNT"  type ="arrow-left" navigation={navigation}/>
             <View style= {{marginLeft:20, marginTop:10, alignItems: "center"}}>
                 <Text style = {title}>Sign-In
                 </Text>
@@ -77,7 +77,7 @@ export default function SignInScreen ({navigation}) {
                     title = "SIGN IN"
                     buttonStyle = {parameters.styledButton}
                     titleStyle = {parameters.buttonTitle}
-                    //onPress = {() => {navigation.navigate('HomeScreen')}}
+                    onPress = {() => {navigation.navigate('RootClientTabs')}}
                 />
             </View>
 
