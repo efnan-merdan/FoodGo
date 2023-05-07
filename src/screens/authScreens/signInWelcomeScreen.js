@@ -7,7 +7,7 @@ import * as Animatable from 'react-native-animatable';
 import DisplayAnImage from '../displayImage';
 
 
-export default function SignInWelcomeScreen () {
+export default function SignInWelcomeScreen ({navigation}) {
     return (
         <View  style = {{backgroundColor: "#ffc6b3"}} >
             <View style = {{justifyContent:'flex-start', alignItems:'center', paddingTop: 20}}>
@@ -24,6 +24,9 @@ export default function SignInWelcomeScreen () {
                     title= "SIGN IN"
                     buttonStyle = {styles.styledButton}
                     titleStyle = {styles.buttonTitle}
+                    onPress = {()=>{
+                        navigation.navigate("SignInScreen")
+                    }}
                 />
             </View>
 
