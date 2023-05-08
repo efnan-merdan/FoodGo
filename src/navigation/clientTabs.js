@@ -17,6 +17,7 @@ const ClientTabs = createBottomTabNavigator();
 export default function RootClientTabs() {
     return(
         <ClientTabs.Navigator
+        // screenOption could be alternative
             tabBarOptions = {{
                 activeTintColor :colors.buttons
             }}
@@ -80,7 +81,7 @@ export default function RootClientTabs() {
                 }
             />  
 
-            <ClientTabs.Screen
+            {/* <ClientTabs.Screen
                 name = "My Account Screen"
                 component = {MyAccountScreen}
                 options = {
@@ -98,7 +99,7 @@ export default function RootClientTabs() {
                         )
                     }
                 }
-            />  
+            />   */}
 
             
 

@@ -41,7 +41,7 @@ export default function AuthStack() {
             />
 
             <Auth.Screen
-                name = "Restaurant Map Screen"
+                name = "RestaurantMapScreen"
                 component = {RestaurantMapScreen}
                 options = {{
                     headerShown: false,
