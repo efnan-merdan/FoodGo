@@ -14,12 +14,13 @@ const BadgeIcon = withBadge(0)(Icon)
 
             <View style = {{alignItems:'center', justifyContent:'center', marginLeft: 15}}>
             <Icon 
-                    type="material-community"
-                    name = "menu"
+                    type="material"
+                    name = "person"
                     color = {colors.headerText}
                     size = {32}
                     
                 />
+                
             </View>
 
             <View style = {{alignItems:"center", justifyContent:"center"}}>

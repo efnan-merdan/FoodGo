@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
 
     textInput1 : {
         borderWidth: 1,
-        borderColor: "#386939e",
+        borderColor: "#386939",
         marginHorizontal: 40,
         borderRadius: 12,
         marginBottom: 20,
