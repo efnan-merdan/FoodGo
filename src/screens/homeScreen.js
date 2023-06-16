@@ -16,6 +16,11 @@ export default function HomeScreen({navigation}) {
 
     return (
         <View style = {styles.container}>
+            <StatusBar
+                translucent
+                barStyle="light-content"
+                backgroundColor="rgba(255, 140, 82,1)"
+             />
             <HomeHeader/>
 
             <ScrollView
