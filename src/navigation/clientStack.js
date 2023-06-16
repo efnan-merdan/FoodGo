@@ -5,6 +5,8 @@ import { createStackNavigator, TransitionPresets } from '@react-navigation/stack
 import SearchResultScreen from '../screens/searchResultScreen';
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import SearchScreen from '../screens/searchScreen';
+import RestaurantHomeScreen from '../screens/RestaurantHomeScreen';
+//import MenuProductScreen from '../screens/MenuProductScreen';
 
 
 
@@ -49,7 +51,7 @@ if(routeName === "RestaurantHomeScreen" || "MenuProductScreen"){
             
 
 
-            {/* <ClientSearch.Screen 
+            <ClientSearch.Screen 
                 name ="RestaurantHomeScreen"
                 component ={RestaurantHomeScreen}
                 options = {
@@ -57,7 +59,7 @@ if(routeName === "RestaurantHomeScreen" || "MenuProductScreen"){
                         headerShown:false
                     })
                 }
-            /> */}
+            />
 
             {/* <ClientSearch.Screen 
                 name ="MenuProductScreen"
