@@ -30,17 +30,17 @@ export default function HomeScreen({navigation}) {
 
             <View style = {{backgroundColor:colors.cardbackground, paddingBottom:5}}>
 
-                <View style = {{marginTop: 20, flexDirection: 'row', justifyContent:"space-evenly"}}>
+                <View style = {{marginTop: 20, marginHorizontal:100, justifyContent:"space-evenly"}}>
                     <TouchableOpacity
                         onPress = {()=>{
                             setDelivery(true)
                         }}
                     >
-                        <View style = {{...styles.deliveryButton, backgroundColor:delivery?colors.buttons :colors.grey5}}>
+                        {/* <View style = {{...styles.deliveryButton, backgroundColor:delivery?colors.buttons :colors.grey5}}>
                             <Text style = {styles.deliveryText}>
                                 Delivery
                             </Text>
-                        </View>
+                        </View> */}
                     </TouchableOpacity>
 
                     <TouchableOpacity
@@ -49,10 +49,16 @@ export default function HomeScreen({navigation}) {
                             navigation.navigate("RestaurantMapScreen")
                         }}
                     >
-                        <View style = {{...styles.deliveryButton, backgroundColor:delivery?colors.grey5 :colors.buttons}}>
+                        <View style = {{...styles.deliveryButton, flexDirection: "row", justifyContent:"space-evenly", alignItems: "center", backgroundColor:colors.grey5}}>
                             <Text style = {styles.deliveryText}>
-                                Pick Up
+                                Map
                             </Text>
+                            <Icon 
+                                name = "place"
+                                type = "material"
+                                size = {32}
+                                color = {colors.buttons}
+                            />
                         </View>
                     </TouchableOpacity>
                 </View>
@@ -85,12 +91,12 @@ export default function HomeScreen({navigation}) {
                 </View>
 
                 <View style = {{flexDirection: "row", alignItems: "center"}}>
-                    <Icon
+                    {/* <Icon
                         type = "material-community"
                         name = "tune"
                         color = {colors.grey1}
                         size = {26}
-                    /> 
+                    />  */}
 
                 </View>
                 </View>
@@ -128,7 +134,7 @@ export default function HomeScreen({navigation}) {
 
             <View style ={styles.headerTextView}>
                 <Text style ={styles.headerText}>
-                    Free Delivery now
+                    Trending Now
                 </Text>
             </View>
 
